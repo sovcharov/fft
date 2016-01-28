@@ -26,7 +26,11 @@ MaxSignalLength = MaxThreadsPerBlock * 2;
 If you have long signal and can't fit it in to one block - ask DSP pro. I am not the one, but i feel that sampling frequency can get lower to fit condition described and it won't effect results of your Fourier Transform.
 The Algoritm with one block can be found on the internet i guess.
 
-##### 2. Code
+##### 2. FFT using CPU
+
+I did not reverse bits. I just sort the input array with a for loop to get it ready for FFT. Made with bit reverse, algorithm should work even faster.
+
+##### 3. Code
 
 Sorry for not so clean code. I know it can be done better and cleaner.
 I was thinking that this way it also may help newcommers to understand it better.
